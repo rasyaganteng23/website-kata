@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Anniversary ❤️</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+    url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1974&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    overflow-x:hidden;
+    color:white;
+}
+
+/* PASSWORD SCREEN */
+
+#lockScreen{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.lock-box{
+    width:100%;
+    max-width:500px;
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,0.2);
+    border-radius:25px;
+    padding:40px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
+
+.lock-box h1{
+    font-size:45px;
+    margin-bottom:15px;
+    color:#ffd6e0;
+}
+
+.lock-box h2{
+    margin-bottom:25px;
+    color:#fff;
+}
+
+.lock-icon{
+    font-size:70px;
+    margin-bottom:20px;
+    animation:pulse 1.5s infinite;
+}
+
+input{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:15px;
+    margin-top:20px;
+    font-size:18px;
+    text-align:center;
+    outline:none;
+}
+
+button{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:15px;
+    background:#ff4d88;
+    color:white;
+    font-size:18px;
+    margin-top:20px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#ff1f66;
+    transform:scale(1.03);
+}
+
+.small{
+    margin-top:20px;
+    font-size:15px;
+    opacity:0.8;
+}
+
+/* MAIN CONTENT */
+
+#mainContent{
+    display:none;
+    padding:40px 20px;
+}
+
+.container{
+    width:100%;
+    max-width:900px;
+    margin:auto;
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(10px);
+    border-radius:30px;
+    padding:50px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
+
+.title{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.title h1{
+    font-size:50px;
+    color:#ffd6e0;
+    margin-bottom:10px;
+}
+
+.title h2{
+    font-size:28px;
+    color:white;
+}
+
+.message{
+    font-size:20px;
+    line-height:2;
+    color:white;
+    text-align:justify;
+}
+
+.message b{
+    color:#ffd6e0;
+}
+
+.footer{
+    text-align:center;
+    margin-top:40px;
+    font-size:28px;
+    color:#ffd6e0;
+    font-weight:bold;
+}
+
+/* LOVE ANIMATION */
+
+.heart{
+    position:fixed;
+    bottom:-20px;
+    color:pink;
+    animation:float 6s linear infinite;
+    opacity:0.7;
+    z-index:1;
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(0) rotate(0deg);
+        opacity:0;
+    }
+
+    20%{
+        opacity:1;
+    }
+
+    100%{
+        transform:translateY(-100vh) rotate(360deg);
+        opacity:0;
+    }
+}
+
+@keyframes pulse{
+    0%{transform:scale(1);}
+    50%{transform:scale(1.1);}
+    100%{transform:scale(1);}
+}
+
+@media(max-width:700px){
+
+.container{
+    padding:30px;
+}
+
+.title h1{
+    font-size:35px;
+}
+
+.message{
+    font-size:17px;
+    line-height:1.9;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- PASSWORD -->
+
+<div id="lockScreen">
+
+    <div class="lock-box">
+
+        <div class="lock-icon">🔒</div>
+
+        <h1>Happy Anniversary ❤️</h1>
+
+        <p>Masukkan tanggal jadian kita ya ade kecil 🤍</p>
+
+        <input type="password" id="password" placeholder="Contoh: HAYUS BETUL YA ">
+
+        <button onclick="checkPassword()">
+            Buka Pesan Untuk Ade Kecil 💕
+        </button>
+
+        <div class="small">
+            Pesan spesial hanya untuk Anggraini Nur Bilqist 🤍
+        </div>
+
+    </div>
+
+</div>
+
+<!-- MAIN -->
+
+<div id="mainContent">
+
+    <div class="container">
+
+        <div class="title">
+            <h1>❤️ Happy Anniversary ❤️</h1>
+            <h2>Untuk Ade Kecil Abang,<br>Anggraini Nur Bilqist 🤍</h2>
+        </div>
+
+        <div class="message">
+
+            UNTUK ADE KECIL ABANG, <b>Anggraini Nur Bilqist</b> 🤍
+            <br><br>
+
+            HARI INI GENAP 1 TAHUN 2 BULAN HUBUNGAN KITA. NGGAK TERASA WAKTU BERJALAN SECEPAT INI, DAN ABANG MASIH SELALU BERSYUKUR KARENA SAMPAI SEKARANG ADE MASIH ADA DI SAMPING ABANG. DARI BANYAKNYA HAL YANG DATANG DALAM HIDUP ABANG, ADE ADALAH SALAH SATU HADIAH TERINDAH YANG ALLAH KASIH BUAT ABANG.
+            <br><br>
+
+            TERIMA KASIH YA, ADE KECIL, KARENA SUDAH BERTAHAN SAMPAI SEJAUH INI. TERIMA KASIH UNTUK SEMUA PERHATIAN KECIL YANG SELALU BISA BUAT HATI ABANG TENANG. UNTUK SEMUA CERITA, TAWA, CANDA, RASA CEMBURU, SAMPAI MOMEN SAAT KITA SALING MENGUATKAN SATU SAMA LAIN.
+            <br><br>
+
+            ADE TAHU NGGAK?
+            KADANG ABANG MIKIR, DARI SEKIAN BANYAK ORANG DI DUNIA INI, TERNYATA ABANG DIPERTEMUKAN SAMA ADE. PEREMPUAN YANG LEMBUT, BAIK, DAN SELALU PUNYA CARA UNTUK BUAT HARI-HARI ABANG TERASA LEBIH INDAH.
+            <br><br>
+
+            1 TAHUN 2 BULAN INI MUNGKIN BELUM TERLALU LAMA, TAPI BUAT ABANG PERJALANAN INI PUNYA BANYAK ARTI.
+            <br><br>
+
+            ABANG JUGA MAU MINTA MAAF KALAU SELAMA INI MASIH BANYAK SIKAP ABANG YANG BIKIN ADE KECEWA ATAU SEDIH. TAPI PERCAYALAH, SEBESAR APA PUN MASALAH YANG DATANG, ABANG TETAP MILIH ADE.
+            <br><br>
+
+            ABANG BERHARAP HUBUNGAN INI NGGAK BERHENTI DI 1 TAHUN 2 BULAN AJA. SEMOGA KITA BISA TERUS SAMA-SAMA, LEWATIN BANYAK HARI, BULAN, DAN TAHUN BERIKUTNYA.
+            <br><br>
+
+            JANGAN PERGI YA, ADE KECIL.
+            <br><br>
+
+            SELAMAT ANNIVERSARY 1 TAHUN 2 BULAN, CINTANYA ABANG 🤍
+            <br><br>
+
+            TERIMA KASIH SUDAH HADIR DAN MEMBUAT HIDUP ABANG JADI LEBIH BERARTI.
+
+        </div>
+
+        <div class="footer">
+            I Love You Forever 💖
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+function checkPassword(){
+
+    const password = document.getElementById("password").value;
+
+    // GANTI PASSWORD SESUAI TANGGAL JADIAN
+    if(password === "15-05-2025"){
+
+        document.getElementById("lockScreen").style.display = "none";
+        document.getElementById("mainContent").style.display = "block";
+
+    }else{
+
+        alert("Tanggal jadian salah 😢");
+
+    }
+
+}
+
+/* HEART ANIMATION */
+
+function createHeart(){
+
+    const heart = document.createElement("div");
+
+    heart.classList.add("heart");
+
+    heart.innerHTML = "❤";
+
+    heart.style.left = Math.random() * 100 + "vw";
+
+    heart.style.fontSize = (Math.random() * 20 + 20) + "px";
+
+    heart.style.animationDuration =
+    (Math.random() * 3 + 3) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+        heart.remove();
+    },6000);
+
+}
+
+setInterval(createHeart,300);
+
+</script>
+
+</body>
+</html>
